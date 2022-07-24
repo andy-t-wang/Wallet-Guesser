@@ -29,34 +29,6 @@ export const deriveRest = async (mnemonic) => {
 };
 
 export const checkBalance = async (address, axios) => {
-  var data = JSON.stringify({
-    jsonrpc: "2.0",
-    method: "ankr_getAccountBalance",
-    params: {
-      blockchain: ["eth", "bsc", "fantom", "avalanche", "polygon", "arbitrum"],
-      walletAddress: address,
-    },
-    id: 1,
-  });
-  var query = {
-    method: "post",
-    url: "https://rpc.ankr.com/multichain",
-    headers: {
-      "Content-Type": "application/json",
-      "X-API-KEY":
-        "22e282df02e47a6dc906c48db9830304e93e9f12bb74a179152c747c01d4e7b7",
-      "Access-Control-Allow-Origin": "https://rpc.ankr.com/multichain",
-      "Access-Control-Allow-Headers": [
-        "Access-Control-Allow-Origin",
-        "X-API-KEY",
-      ],
-    },
-    data: data,
-  };
-  try {
-    const call = await others(query);
-    return call.data.result;
-  } catch (e) {
-    console.log(e);
-  }
+  const postsResponse = await fetch(`/api/balance?address=${address}`);
+  return await postsResponse.json();
 };
