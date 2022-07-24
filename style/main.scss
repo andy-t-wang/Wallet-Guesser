@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Matter";
+  src: local("Matter"), url(../assets/Matter.ttf) format("ttf");
+}
+
+div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button {
+  border-radius: 15px;
+  padding: 0.5rem 2.8rem 0.5rem 2.8rem;
+  background-color: #39993a;
+  color: white;
+  border: 0.5px solid #000000;
+  font-size: 1.1rem;
+}
+
+button:hover {
+  background-color: white; /* Green */
+  color: #39993a;
+  cursor: pointer;
+}
+
+.walletItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.spacer {
+  width: 0.2rem;
+}
+
+.extraInfo {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.historyDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.pepeDiv {
+  position: absolute;
+  left: 5rem;
+  transform: rotate(random(300) + deg);
+  z-index: 0;
+}
+
+.pepeDiv2 {
+  position: absolute;
+  right: 5rem;
+  transform: rotate(random(300) + deg);
+  z-index: 0;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+p {
+  font-size: 0.85rem !important;
+}
+
+$rotation: var(--transform);
