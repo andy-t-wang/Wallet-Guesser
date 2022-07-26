@@ -70,3 +70,8 @@ p {
 }
 
 $rotation: var(--transform);
+
+.main {
+  aspect-ratio: 10/3;
+  height: 100vh !important;
+}

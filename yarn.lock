@@ -965,7 +965,7 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
-loose-envify@^1.1.0:
+loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
@@ -1100,6 +1100,11 @@ normalize-path@^3.0.0, normalize-path@~3.0.0:
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
   integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
 
+object-assign@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-3.0.0.tgz#9bedd5ca0897949bca47e7ff408062d549f587f2"
+  integrity sha512-jHP15vXVGeVh1HuaA2wY6lxk+whK/x4KBG88VXeRma7CCun7iGD5qPc4eYykQ9sdQvg8jkwFKsSxHln2ybW3xQ==
+
 object-assign@^4, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
@@ -1191,6 +1196,15 @@ prebuild-install@^7.1.1:
     tar-fs "^2.0.0"
     tunnel-agent "^0.6.0"
 
+prop-types@^15.8.1:
+  version "15.8.1"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
+  integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
+  dependencies:
+    loose-envify "^1.4.0"
+    object-assign "^4.1.1"
+    react-is "^16.13.1"
+
 pump@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/pump/-/pump-3.0.0.tgz#b4a2116815bde2f4e1ea602354e8c75565107a64"
@@ -1229,6 +1243,30 @@ react-dom@17.0.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     scheduler "^0.20.2"
+
+react-is@^16.13.1:
+  version "16.13.1"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
+  integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-reel@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/react-reel/-/react-reel-1.2.3.tgz#8e9c625a88e68d48c3b52baf2164595f19850320"
+  integrity sha512-kbrHjf7Ba/y5RqyIwI2NKbYetzmHu72l0jFTc8o3zbXf/qdYB0NftRbvBegUdCEnn8AWLfOkQ3Eov2sJZUsVfw==
+  dependencies:
+    react-themeable "^1.1.0"
+
+react-spinners@^0.13.3:
+  version "0.13.3"
+  resolved "https://registry.yarnpkg.com/react-spinners/-/react-spinners-0.13.3.tgz#9d00d10fb2a0869b21efdc13fb0fddbcecd05731"
+  integrity sha512-FHQMH6dAl1Vw4Lxv0H7hbGsjBs0aKNVwjGrDJLuD9R/C3h9+IuBhKJOJyCcegxMaLiBSBV96Tp+XV3OwPK8Vtw==
+
+react-themeable@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-themeable/-/react-themeable-1.1.0.tgz#7d4466dd9b2b5fa75058727825e9f152ba379a0e"
+  integrity sha512-kl5tQ8K+r9IdQXZd8WLa+xxYN04lLnJXRVhHfdgwsUJr/SlKJxIejoc9z9obEkx1mdqbTw1ry43fxEUwyD9u7w==
+  dependencies:
+    object-assign "^3.0.0"
 
 react@17.0.2:
   version "17.0.2"
