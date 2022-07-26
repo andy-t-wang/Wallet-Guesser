@@ -44,7 +44,9 @@ export default function MainPage() {
   return (
     <div>
       <h2>Find a wallet collision:</h2>
-      <p>We check Eth, Ftm, Bsc, Matic, Arb, and Avax just to be sure!</p>
+      <p className="centerP">
+        We check Eth, Ftm, Bsc, Matic, Arb, and Avax just to be sure!
+      </p>
       <button onClick={onFeelingLucky}>
         {!loading ? (
           "Feeling Lucky?"
@@ -95,6 +97,7 @@ export default function MainPage() {
       )}
       {size.width > mobileSize && <div className="pepeDiv">{pepe}</div>}
       {size.width > mobileSize && <div className="pepeDiv2">{pepe2}</div>}
+      {size.width < mobileSize && <div className="pepeDivMobile">{pepe2}</div>}
     </div>
   );
 }

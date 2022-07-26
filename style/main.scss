@@ -60,6 +60,11 @@ button:hover {
   transform: rotate(random(300) + deg);
   z-index: 0;
 }
+.pepeDivMobile {
+  transform: rotate(random(300) + deg);
+  margin-top: 2rem;
+  z-index: 0;
+}
 
 .clickable {
   cursor: pointer;
@@ -74,4 +79,8 @@ $rotation: var(--transform);
 .main {
   aspect-ratio: 10/3;
   height: 100vh !important;
+}
+
+.centerP {
+  text-align: center;
 }

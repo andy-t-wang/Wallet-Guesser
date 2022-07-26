@@ -68,7 +68,8 @@ export default function Home() {
             </a>
             ): 2048 ^ 12 = 2^132
           </p>
-          <p>.....but who knows how many wallets have money? Good Luck! 🍦</p>
+          <p>.....but who knows how many wallets have money?</p>
+          <p>Good Luck! 🍦</p>
           <p>
             By: <a href="https://twitter.com/wangandyy">Andy</a> 🦤
           </p>
