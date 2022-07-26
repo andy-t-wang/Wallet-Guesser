@@ -5,8 +5,54 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Seed Phrase Casino</title>
+        <title>
+          Wallet Casino - Try to generate a random wallet with some money in it
+        </title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="title"
+          content="Wallet Casino - Try to generate a random wallet with some money in it"
+        />
+        <meta
+          name="description"
+          content="There are over 2^132, but maybe it's your lucky day! Share if you get a huge windfall."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://lighthearted-madeleine-4a9f02.netlify.app/"
+        />
+        <meta
+          property="og:title"
+          content="Wallet Casino - Try to generate a random wallet with some money in it"
+        />
+        <meta
+          property="og:description"
+          content="There are over 2^132, but maybe it's your lucky day! Share if you get a huge windfall."
+        />
+        <meta
+          property="og:image"
+          content="https://firebasestorage.googleapis.com/v0/b/pegaswap-493e9.appspot.com/o/guesser.png?alt=media&token=2aa9b950-d16f-41b5-8a27-95b60309a266"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://lighthearted-madeleine-4a9f02.netlify.app/"
+        />
+        <meta
+          property="twitter:title"
+          content="Wallet Casino - Try to generate a random wallet with some money in it"
+        />
+        <meta
+          property="twitter:description"
+          content="There are over 2^132, but maybe it's your lucky day! Share if you get a huge windfall."
+        />
+        <meta
+          property="twitter:image"
+          content="https://firebasestorage.googleapis.com/v0/b/pegaswap-493e9.appspot.com/o/guesser.png?alt=media&token=2aa9b950-d16f-41b5-8a27-95b60309a266"
+        ></meta>
       </Head>
 
       <main>
