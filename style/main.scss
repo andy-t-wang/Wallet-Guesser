@@ -63,12 +63,12 @@ button:hover {
   position: absolute;
   right: 5rem;
   transform: rotate(random(300) + deg);
-  z-index: 0;
+  z-index: -1;
 }
 .pepeDivMobile {
   transform: rotate(random(300) + deg);
   margin-top: 2rem;
-  z-index: 0;
+  z-index: -1;
 }
 
 .clickable {

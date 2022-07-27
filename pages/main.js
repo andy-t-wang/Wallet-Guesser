@@ -88,7 +88,11 @@ export default function MainPage() {
               >
                 <p>{i + 1}.</p>
                 <span className="spacer"></span>
-                <p>{wallet.address} </p>
+                <p>
+                  {wallet.address.slice(0, 10) +
+                    "....." +
+                    wallet.address.slice(30)}{" "}
+                </p>
                 <span className="spacer"></span>
                 <p className={wallet.balance > 0 ? "balancefound" : "balance"}>
                   ${wallet.balance}
