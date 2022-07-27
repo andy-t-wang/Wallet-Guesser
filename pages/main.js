@@ -4,7 +4,7 @@ import { pepePicker } from "../scripts/pepepicker";
 import ClipLoader from "react-spinners/ClipLoader";
 
 const solanaRPC = "https://rpc.ankr.com/solana";
-const mobileSize = 680;
+const mobileSize = 740;
 
 export default function MainPage() {
   const [wallet, setWallet] = useState(false);
