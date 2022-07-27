@@ -19,6 +19,11 @@ button {
   font-size: 1.1rem;
 }
 
+.secrets {
+  display: flex;
+  max-width: 85%;
+}
+
 button:hover {
   background-color: white; /* Green */
   color: #39993a;
@@ -32,7 +37,7 @@ button:hover {
 }
 
 .spacer {
-  width: 0.2rem;
+  width: 0.25rem;
 }
 
 .extraInfo {
@@ -71,9 +76,14 @@ button:hover {
 }
 
 p {
-  font-size: 0.85rem !important;
+  font-size: 0.89rem !important;
+  text-align: center;
+  word-break: break-word;
 }
 
+.wordBreak {
+  word-break: break-all;
+}
 $rotation: var(--transform);
 
 .main {
@@ -83,4 +93,12 @@ $rotation: var(--transform);
 
 .centerP {
   text-align: center;
+}
+
+.balance {
+  color: red;
+}
+
+.balancefound {
+  color: green;
 }

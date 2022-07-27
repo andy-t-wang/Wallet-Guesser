@@ -59,7 +59,9 @@ export default function MainPage() {
           <p>{wallet.address} </p>
           <span className="spacer"></span>
           <span className="spacer"></span>
-          <p>${wallet.balance}</p>
+          <p className={wallet.balance > 0 ? "balancefound" : "balance"}>
+            ${wallet.balance}
+          </p>
         </div>
       )}
       {wallet && (
@@ -68,9 +70,9 @@ export default function MainPage() {
         </a>
       )}
       {showSecrets && (
-        <div>
+        <div className="secrets">
           <p>Secret Phrase: {wallet.mnemonic} </p>
-          <p>Private Key: {wallet.pk} </p>
+          <p className="wordBreak">Private Key: {wallet.pk} </p>
           <p>Tokens Held: {wallet.tokens} </p>
         </div>
       )}
@@ -88,8 +90,9 @@ export default function MainPage() {
                 <span className="spacer"></span>
                 <p>{wallet.address} </p>
                 <span className="spacer"></span>
-                <span className="spacer"></span>
-                <p>${wallet.balance}</p>
+                <p className={wallet.balance > 0 ? "balancefound" : "balance"}>
+                  ${wallet.balance}
+                </p>
               </div>
             );
           })}
